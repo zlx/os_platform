@@ -94,7 +94,7 @@ module OSPlatform
         when /debian/, /ubuntu/, /linuxmint/, /raspbian/
           @platform_family = "debian"
         when /fedora/, /pidora/
-          self.pinstancelatform_family = "fedora"
+          @platform_family = "fedora"
         when /oracle/, /centos/, /redhat/, /scientific/, /enterpriseenterprise/, /amazon/, /xenserver/, /cloudlinux/, /ibm_powerkvm/, /parallels/ # Note that 'enterpriseenterprise' is oracle's LSB "distributor ID"
           @platform_family = "rhel"
         when /suse/
